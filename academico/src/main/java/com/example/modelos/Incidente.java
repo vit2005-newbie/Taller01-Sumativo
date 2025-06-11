@@ -3,13 +3,13 @@ package com.example.modelos;
 import java.util.Date;
 import java.util.List;
 
-public class Incidente<T> {
+public class Incidente {
     protected int id;
     protected Date fechaReportado;
     protected String estado;
     protected String titulo;
     protected String descripcion;
-    protected List<T> logActualizaciones;
+    protected List<Integer> logActualizaciones;
     protected Date fechaCerrado;
     protected String tipo;
     protected PersonalAcademico beneficiario;
@@ -69,10 +69,10 @@ public class Incidente<T> {
     public void setResponsable(Usuario responsable) {
         this.responsable = responsable;
     }
-    public List<T> getLogActualizaciones() {
+    public List<Integer> getLogActualizaciones() {
         return logActualizaciones;
     }
-    public void setLogActualizaciones(List<T> logActualizaciones) {
+    public void setLogActualizaciones(List<Integer> logActualizaciones) {
         this.logActualizaciones = logActualizaciones;
     }
 
